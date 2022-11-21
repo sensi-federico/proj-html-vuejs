@@ -1,12 +1,14 @@
 <script >
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
+import JumbotronSlider from './components/JumbotronSlider.vue';
 
 export default {
   name: 'App',
   components: {
     AppHeader,
-    AppFooter
+    AppFooter,
+    JumbotronSlider
   }
 }
 </script>
@@ -14,6 +16,7 @@ export default {
 <template>
 
   <AppHeader />
+  <JumbotronSlider />
   <AppFooter />
 
 </template>

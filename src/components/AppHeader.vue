@@ -67,57 +67,5 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../assets/scss/partial/variables';
 
-#site_header {
-
-    .banner {
-        padding: .5rem 2rem;
-
-        .right {
-            i {
-                margin-left: 1rem;
-            }
-        }
-    }
-
-    nav {
-
-        padding: 2rem;
-
-        .logo {
-            img {
-                width: 200px;
-            }
-        }
-
-        .links {
-            a {
-                color: black;
-                text-decoration: none;
-                margin: 1rem;
-                text-transform: uppercase;
-                font-size: 15px;
-            }
-        }
-
-        .search {
-            button {
-                text-transform: uppercase;
-                background: #00D9A6;
-                border: none;
-                padding: .5rem 1rem;
-                border-radius: 2rem;
-                color: white;
-                font-size: small;
-            }
-
-            i {
-                color: #00D9A6;
-            }
-        }
-
-    }
-
-}
 </style>

@@ -1,5 +1,6 @@
 @use '../../../node_modules/bootstrap/scss/bootstrap.scss';
 @use './partial/variables';
+@use './partial/header';
 
 * {
     margin: 0;
@@ -9,4 +10,14 @@
 
 img {
     max-width: 100%;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
