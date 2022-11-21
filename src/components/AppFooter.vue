@@ -18,6 +18,7 @@ export default {
 <template>
 
     <footer id="site_footer">
+
         <!-- navbar -->
         <nav>
             <div class="container">
@@ -35,7 +36,7 @@ export default {
 
                     <!-- links -->
                     <div class="col links d-flex flex-column">
-                        <h4 class="text-uppercase">quick links</h4>
+                        <h5 class="text-uppercase">quick links</h5>
                         <TextHr />
                         <a class="text-muted text-center text-capitalize" :href="store.linksFooter[i].url"
                             v-for="(link, i) in store.linksFooter">{{ store.linksFooter[i].text }}</a>
@@ -43,19 +44,51 @@ export default {
 
                     <!-- contact -->
                     <div class="col contact">
-                        <h4 class="text-uppercase">contact</h4>
+                        <h5 class="text-uppercase">contact</h5>
                         <TextHr />
+                        <p class="text-muted pb-2">
+                            Patricia C. Amedee 4401 Waldeck Street <br> Grapevine Nashville, TX 76051
+                        </p>
+                        <p class="text-muted pb-3">
+                            info@yourdomain.com
+                        </p>
+                        <p class="text-muted">
+                            +39 (0) 101 0000 888
+                        </p>
                     </div>
 
                     <!-- location -->
                     <div class="col location">
-                        <h4 class="text-uppercase">location on maps</h4>
+                        <h5 class="text-uppercase">location on maps</h5>
                         <TextHr />
+                        <img src="../../public/images/map.png" alt="">
                     </div>
 
                 </div>
             </div>
         </nav>
+
+        <!-- banner -->
+        <div class="banner bg-dark">
+
+            <div class="container d-flex justify-content-between align-items-center py-4">
+
+                <!-- copyright -->
+                <p class="text-muted m-0">
+                    <i class="fa fa-copyright" aria-hidden="true"></i>
+                    2020 PHLOX BUSINESS THEME.
+                </p>
+
+                <!-- social -->
+                <div class="social d-flex aling-items-center text-muted">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+
+            </div>
+
+        </div>
 
     </footer>
     <!-- /#site_footer -->
@@ -67,6 +100,13 @@ export default {
 
     nav {
 
+        padding: 5rem 0;
+
+        p,
+        a {
+            font-size: 12.5px;
+        }
+
         .logo {
 
             img {
@@ -76,14 +116,25 @@ export default {
             p {
                 padding-top: 1.5rem;
                 margin: 0;
-                font-size: 12px;
+                font-size: 12.5px;
                 line-height: 1.2rem;
             }
         }
 
         .links {
+
             a {
                 text-decoration: none;
+                margin-bottom: .2rem;
+            }
+
+        }
+    }
+
+    .banner {
+        .social {
+            i {
+                margin-left: 1rem;
             }
         }
     }
