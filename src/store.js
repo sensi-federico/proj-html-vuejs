@@ -2,7 +2,7 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-    links: [
+    linksHeader: [
         {
             text: 'home',
             url: '#'
@@ -27,5 +27,32 @@ export const store = reactive({
             text: 'contact',
             url: '#'
         },
-    ]
+    ],
+    linksFooter: [
+        {
+            text: 'carrers',
+            url: '#'
+        },
+        {
+            text: 'news',
+            url: '#'
+        },
+        {
+            text: 'terms of use',
+            url: '#'
+        },
+        {
+            text: 'privacy projects',
+            url: '#'
+        },
+        {
+            text: 'about',
+            url: '#'
+        },
+        {
+            text: 'contact',
+            url: '#'
+        },
+    ],
+
 })
