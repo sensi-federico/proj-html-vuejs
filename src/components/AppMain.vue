@@ -185,6 +185,49 @@ export default {
             </div>
         </section>
 
+        <!-- packs - offers -->
+        <section class="packs">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <!-- text -->
+                    <div class="col-4 text">
+                        <h1>With <span class="green">live chat <br> 24/7 </span>support </h1>
+                        <TextHr />
+                        <p class="text-muted">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus alias
+                            quidem
+                            dicta, doloremque distinctio temporibus mollitia fugiat rem possimus illum.
+                        </p>
+                    </div>
+                    <!-- cards -->
+                    <div class="col-8">
+                        <div class="row row-cols-3">
+                            <div class="col" v-for="(pack, i) in store.packs">
+                                <div class="my-cards text-center">
+                                    <div class="top pt-2"
+                                        :class="store.packs[i].title === 'development' ? 'green-card' : 'black-card'">
+                                        <div class="banner mt-2">
+                                            <h4>{{ store.packs[i].title }}</h4>
+                                            <p class="text-muted m-0 pb-2">{{ store.packs[i].subtitle }}</p>
+                                        </div>
+                                        <h1 class="text-white price">{{ store.packs[i].price }}
+                                            <span class="small">{{ store.packs[i].work }}</span>
+                                        </h1>
+                                    </div>
+                                    <div class="bottom pt-5 pb-3">
+                                        <p class="m-0 pb-3" v-for="(offer, i) in store.offers">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                            {{ store.offers[i] }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <!-- #site_main -->
 
@@ -394,6 +437,65 @@ export default {
                 color: #00D9A6;
             }
         }
+    }
+
+    .packs {
+        padding: 15rem 0 8rem 0;
+        background-color: #f5f5f5;
+
+        .text {
+
+            span.green {
+                color: #00D9A6;
+            }
+
+            span.small {
+                font-size: large;
+            }
+        }
+
+        .my-cards {
+            border-radius: 1rem;
+            box-shadow: 0 2px 4px 0 rgba(152, 150, 150, 0.2), 0 3px 10px 0 rgba(146, 144, 144, 0.19);
+
+            .top {
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+            }
+
+            .bottom {
+                background-color: white;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+
+                p {
+                    text-transform: capitalize;
+                }
+            }
+
+            .green-card {
+                background-color: #00D9A6;
+            }
+
+            .black-card {
+                background-color: black;
+            }
+
+            .banner {
+                background-color: white;
+                padding: .5rem;
+
+                h4 {
+                    text-transform: uppercase;
+                }
+            }
+
+            .price {
+                padding: 1.5rem 0;
+                margin: 0;
+            }
+        }
+
     }
 }
 </style>

@@ -109,6 +109,33 @@ export const store = reactive({
         '../public/images/aa9a4539-PQGJ7HU-1024x1024.jpg',
         '../public/images/cody-davis-253928-unsplash-1024x1024.jpg',
     ],
+    packs: [
+        {
+            title: 'designing',
+            subtitle: 'All Design',
+            price: '$ 13',
+            work: ' /Design',
+        },
+        {
+            title: 'development',
+            subtitle: 'WordPress Projects',
+            price: '$ 15',
+            work: ' /Project',
+        },
+        {
+            title: 'seo',
+            subtitle: 'Web Products',
+            price: '$ 10',
+            work: ' /Product',
+        },
+    ],
+    offers: [
+        'Creative Design Enabled',
+        'Vibrant Color Usage',
+        'Eye catching design',
+        'extreme typography',
+        'exceptional design',
+    ],
 
 
     activeImage: 0,
