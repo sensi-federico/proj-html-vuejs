@@ -53,7 +53,7 @@ export default {
 
         <!-- missons -->
         <section class="missions py-5">
-            <div class="row py-5">
+            <div class="row row-cols-2 py-5">
                 <!-- image -->
                 <div class="col-6 image">
                     <img class="first-image" src="../../public/images/busy-architect-PYVKWM4-1024x872.jpg" alt="">
@@ -61,7 +61,7 @@ export default {
                         src="../../public/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
                 </div>
                 <!-- text -->
-                <div class="col-6 text my-5 px-5">
+                <div class="col-6 text my-5">
                     <h1>Learn more <br> about our <br> <span>missions</span> </h1>
                     <TextHr />
                     <p>
@@ -105,13 +105,82 @@ export default {
 
                 </div>
                 <!-- cards -->
-                <div class="row row-cols-4 pt-4">
-                    <div class="col" v-for="(image, i) in store.projectsCards">
-                        <img :src="store.projectsCards[i]" alt="">
+                <div class="container">
+                    <div class="row row-cols-4 pt-4">
+                        <div class="col" v-for="(image, i) in store.projectsCards">
+                            <img :src="store.projectsCards[i]" alt="">
+                        </div>
+                    </div>
+                    <div class="button d-flex justify-content-center">
+                        <button>read more</button>
+                    </div>
+                    <div class="vertical">
+                        17 years of experience helping people for best solutions
                     </div>
                 </div>
-                <div class="button d-flex justify-content-center">
-                    <button>read more</button>
+            </div>
+        </section>
+
+        <!-- showcase -->
+        <section class="showcase">
+            <div class="container d-flex">
+                <!-- stats -->
+                <div class="stats">
+                    <img src="../../public/images/person-with-long-curly-hair-PZ99QM2-2x.jpg" alt="">
+                </div>
+                <div class="stats-cover">
+                    <div class="cover">
+                        <div class="top text-center">
+                            <h1>280</h1>
+                            <h2>projects</h2>
+                        </div>
+                        <div class="bottom d-flex align-items-center">
+                            <div class="left pe-4 text-center">
+                                <h1>+3,500</h1>
+                                <h2>users' comments</h2>
+                            </div>
+                            <div class="center"></div>
+                            <div class="right ps-4 text-center">
+                                <h1>100%</h1>
+                                <h2>happy clients</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="text">
+                    <h1>We <span>love</span> what <br> we do</h1>
+                    <TextHr />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem alias labore perferendis
+                        laudantium repellat, odit natus fugit doloribus placeat asperiores, aut aliquam voluptas
+                        reprehenderit. Atque architecto recusandae incidunt laboriosam.
+                        reprehenderit. Atque architecto recusandae incidunt laboriosam.
+                        recusandae incidunt laboriosam.
+                    </p>
+
+
+
+
+
+                    <!-- da rendere dinamico se avanza tempo -->
+
+
+                    <div class="icons d-flex align-items-center pt-3">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p class="ms-2">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="icons d-flex align-items-center pt-1">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p class="ms-2">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="icons d-flex align-items-center pt-1">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p class="ms-2">Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+
+
                 </div>
             </div>
         </section>
@@ -123,6 +192,7 @@ export default {
 
 <style lang="scss">
 #site_main {
+
     .services {
         background-color: #F9F9F9;
         padding: 8rem 0;
@@ -155,15 +225,18 @@ export default {
     }
 
     .missions {
+
         .image {
             .first-image {
                 width: 70%;
-                border-radius: 1rem;
+                border-top-right-radius: 1rem;
+                position: relative;
+                left: -1rem;
             }
 
             .second-image {
                 position: absolute;
-                top: 198%;
+                top: 100rem;
                 left: 10%;
                 width: 35%;
                 border-radius: .5rem;
@@ -205,6 +278,16 @@ export default {
             font-size: small;
         }
 
+
+        .vertical {
+            position: absolute;
+            transform: rotate(-90deg);
+            top: 173rem;
+            right: -7rem;
+            font-size: small;
+        }
+
+
         .col {
             padding: 0 0 !important;
         }
@@ -218,6 +301,98 @@ export default {
             color: white;
             font-size: small;
             margin-top: 5rem;
+        }
+    }
+
+    .showcase {
+        padding: 10rem 0;
+        background: #f5f5f5;
+
+        .stats {
+            img {
+                width: 690px;
+                height: 480px;
+                border-radius: .5rem;
+            }
+        }
+
+        .stats-cover {
+            background-color: #00D9A6;
+            width: 690px;
+            height: 480px;
+            border-radius: .5rem;
+            position: absolute;
+            left: 4.5rem;
+            opacity: 0.9;
+
+            .cover {
+
+                scale: 1.3;
+
+                .top {
+                    color: white;
+                    position: relative;
+                    right: 2rem;
+                    top: 7rem;
+
+                    h1 {
+                        font-size: 50px;
+                    }
+
+                    h2 {
+                        font-size: 10px;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .bottom {
+                    position: relative;
+                    top: 8rem;
+                    left: 12rem;
+                    color: white;
+
+                    h1 {
+                        font-size: 25px;
+                    }
+
+                    h2 {
+                        font-size: 10px;
+                        text-transform: uppercase;
+                    }
+
+                    .center {
+                        height: 100px;
+                        width: 2px;
+                        background-color: #f5f5f5;
+                        opacity: 0.3;
+                    }
+                }
+
+            }
+        }
+
+        .text {
+            background: white;
+            box-shadow: 0 2px 4px 0 rgba(152, 150, 150, 0.2), 0 3px 10px 0 rgba(146, 144, 144, 0.19);
+            width: 700px;
+            padding: 5rem;
+            border-radius: .5rem;
+            position: absolute;
+            right: 4.5rem;
+            top: 220rem;
+            text-transform: capitalize;
+
+            p {
+                font-size: small;
+            }
+
+            i {
+                color: #00D9A6;
+            }
+
+            span {
+                color: #00D9A6;
+            }
         }
     }
 }
