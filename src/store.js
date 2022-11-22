@@ -77,6 +77,32 @@ export const store = reactive({
             text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind text. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove'
         },
     ],
+
+    servicesCards: [
+        {
+            icon: 'fa-solid fa-gauge-high',
+            title: 'speed optimization',
+            text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sint repellendus ex vitae magni fugiat.'
+        },
+        {
+            icon: 'fa-solid fa-cloud',
+            title: 'cloud solutions',
+            text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sint repellendus ex vitae magni fugiat.'
+        },
+        {
+            icon: 'fa-solid fa-tablet-screen-button',
+            title: 'website design',
+            text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sint repellendus ex vitae magni fugiat.'
+        },
+        {
+            icon: 'fa-solid fa-stopwatch',
+            title: 'online marketing',
+            text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sint repellendus ex vitae magni fugiat.'
+        },
+    ],
+
+
+
     activeImage: 0,
     activeSlide: 0,
     slideThree() {

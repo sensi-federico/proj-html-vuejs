@@ -86,7 +86,7 @@ export default {
         .text {
             width: 600px;
             position: relative;
-            left: 15%;
+            left: 10%;
             padding-top: 5%;
 
             h5 {
@@ -109,7 +109,7 @@ export default {
                 font-size: x-small;
                 border: none;
                 border-radius: 2rem;
-                padding: 1rem 2.5rem;
+                padding: .8rem 2rem;
                 margin-bottom: 3rem;
             }
 
@@ -124,6 +124,8 @@ export default {
                 background-color: black;
                 color: white;
                 border-radius: 2rem;
+                position: absolute;
+                left: 25rem;
 
                 .slide-one,
                 .slide-two,
