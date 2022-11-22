@@ -73,6 +73,49 @@ export default {
             </div>
         </section>
 
+        <!-- projects -->
+        <section class="projects">
+            <div class="container">
+                <div class="title-text d-flex">
+                    <div class="row">
+                        <!-- title -->
+                        <div class="col">
+                            <div class="title">
+                                <TextHr />
+                                <h1>Our recent <span>web designs</span> & some examples of <br> past
+                                    <span>projects</span>
+                                </h1>
+                                <TextHr />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- text -->
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat et iusto
+                                    beatae
+                                    excepturi dolores perspiciatis veritatis molestiae enim, labore, eos aspernatur,
+                                    quam
+                                    hic?
+                                    Temporibus excepturi obcaecati facilis. Temporibus doloremque dolor rem aperiam
+                                    quaerat
+                                    incidunt nisi odio debitis quam in ea accusantium velit deleniti.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- cards -->
+                <div class="row row-cols-4 pt-4">
+                    <div class="col" v-for="(image, i) in store.projectsCards">
+                        <img :src="store.projectsCards[i]" alt="">
+                    </div>
+                </div>
+                <div class="button d-flex justify-content-center">
+                    <button>read more</button>
+                </div>
+            </div>
+        </section>
+
     </main>
     <!-- #site_main -->
 
@@ -140,6 +183,41 @@ export default {
 
         span {
             color: #00D9A6;
+        }
+    }
+
+    .projects {
+        padding: 5rem 0;
+
+        .title {
+            h1 {
+                font-size: 50px;
+                padding-bottom: 1rem;
+            }
+
+            span {
+                color: #00D9A6;
+            }
+        }
+
+        .text {
+            padding-top: 10rem;
+            font-size: small;
+        }
+
+        .col {
+            padding: 0 0 !important;
+        }
+
+        button {
+            text-transform: uppercase;
+            background: #00D9A6;
+            border: none;
+            padding: .5rem 1rem;
+            border-radius: 2rem;
+            color: white;
+            font-size: small;
+            margin-top: 5rem;
         }
     }
 }
