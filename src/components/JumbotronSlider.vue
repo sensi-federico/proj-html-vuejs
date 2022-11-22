@@ -22,7 +22,7 @@ export default {
 
         <!-- slider -->
         <div class="slider">
-            <div class="row">
+            <div class="row row-cols-2">
                 <div class="text text-white col">
                     <!-- subtitle -->
                     <h5>{{ store.slides[store.activeImage].subtitle }}</h5>
@@ -56,7 +56,7 @@ export default {
                     </div>
                 </div>
                 <!-- image -->
-                <div class="cropper col-8">
+                <div class="cropper col">
                     <img :src="store.slides[store.activeImage].image" alt="">
                 </div>
 
@@ -74,8 +74,6 @@ export default {
     .slider {
         .cropper {
             overflow: hidden;
-            position: relative;
-            left: 15%;
 
             img {
                 margin: -100px 0;

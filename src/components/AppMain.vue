@@ -50,6 +50,29 @@ export default {
                 </div>
             </div>
         </section>
+
+        <!-- missons -->
+        <section class="missions py-5">
+            <div class="row py-5">
+                <!-- image -->
+                <div class="col-6 image">
+                    <img class="first-image" src="../../public/images/busy-architect-PYVKWM4-1024x872.jpg" alt="">
+                    <img class="second-image"
+                        src="../../public/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
+                </div>
+                <!-- text -->
+                <div class="col-6 text my-5 px-5">
+                    <h1>Learn more <br> about our <br> <span>missions</span> </h1>
+                    <TextHr />
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus alias quidem
+                        dicta, doloremque distinctio temporibus mollitia fugiat rem possimus illum.
+                    </p>
+                    <button>read more</button>
+                </div>
+            </div>
+        </section>
+
     </main>
     <!-- #site_main -->
 
@@ -85,6 +108,38 @@ export default {
             span {
                 color: #00D9A6;
             }
+        }
+    }
+
+    .missions {
+        .image {
+            .first-image {
+                width: 70%;
+                border-radius: 1rem;
+            }
+
+            .second-image {
+                position: absolute;
+                top: 198%;
+                left: 10%;
+                width: 35%;
+                border-radius: .5rem;
+            }
+        }
+
+        button {
+            text-transform: uppercase;
+            background: #00D9A6;
+            border: none;
+            padding: .5rem 1rem;
+            border-radius: 2rem;
+            color: white;
+            font-size: small;
+            margin-top: .5rem;
+        }
+
+        span {
+            color: #00D9A6;
         }
     }
 }
