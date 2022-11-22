@@ -102,7 +102,6 @@ export default {
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <!-- cards -->
                 <div class="container">
@@ -204,8 +203,10 @@ export default {
                         <div class="row row-cols-3">
                             <div class="col" v-for="(pack, i) in store.packs">
                                 <div class="my-cards text-center">
+                                    <!-- top card -->
                                     <div class="top pt-2"
                                         :class="store.packs[i].title === 'development' ? 'green-card' : 'black-card'">
+                                        <!-- banner -->
                                         <div class="banner mt-2">
                                             <h4>{{ store.packs[i].title }}</h4>
                                             <p class="text-muted m-0 pb-2">{{ store.packs[i].subtitle }}</p>
@@ -214,6 +215,7 @@ export default {
                                             <span class="small">{{ store.packs[i].work }}</span>
                                         </h1>
                                     </div>
+                                    <!-- bottom card -->
                                     <div class="bottom pt-5 pb-3">
                                         <p class="m-0 pb-3" v-for="(offer, i) in store.offers">
                                             <i class="fa fa-check" aria-hidden="true"></i>
@@ -225,6 +227,22 @@ export default {
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- comment -->
+        <section class="comment">
+            <div class="scale"></div>
+            <div class="content text-center">
+                <i class="fa-solid fa-quote-left"></i>
+                <p class="long">
+                    When it comes to barbequing, there are two min schools of thought fore the <br> techniques that you
+                    can use, Freshly scrambled eggs with applewood smoked bacon <br> - are amazing!
+                </p>
+                <img src="../../public/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
+
+                <h4>lissa durbin</h4>
+                <p>Client</p>
             </div>
         </section>
 
@@ -496,6 +514,50 @@ export default {
             }
         }
 
+    }
+
+    .comment {
+        background-image: url('../../public/images/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg');
+        background-size: cover;
+        background-position: 0 -10rem;
+        color: white;
+
+        .scale {
+            height: 610px;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            opacity: .8;
+        }
+
+        .content {
+            padding: 6rem 0;
+            position: relative;
+
+            i {
+                font-size: 50px;
+                color: #00D9A6;
+                padding-bottom: 2rem;
+            }
+
+            p.long {
+                padding-bottom: 3rem;
+                font-style: italic;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 1.5rem;
+            }
+
+            h4 {
+                color: #00D9A6;
+                text-transform: uppercase;
+            }
+        }
     }
 }
 </style>
