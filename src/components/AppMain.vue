@@ -57,6 +57,7 @@ export default {
                 <!-- image -->
                 <div class="col-6 image">
                     <img class="first-image" src="../../public/images/busy-architect-PYVKWM4-1024x872.jpg" alt="">
+                    <div class="cover"></div>
                     <img class="second-image"
                         src="../../public/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
                 </div>
@@ -106,8 +107,9 @@ export default {
                 <!-- cards -->
                 <div class="container">
                     <div class="row row-cols-4 pt-4">
-                        <div class="col" v-for="(image, i) in store.projectsCards">
+                        <div class="col col-image" v-for="(image, i) in store.projectsCards">
                             <img :src="store.projectsCards[i]" alt="">
+                            <div class="cover"></div>
                         </div>
                     </div>
                     <div class="button d-flex justify-content-center">
@@ -347,13 +349,19 @@ export default {
 
             button {
                 text-transform: uppercase;
-                background: #00D9A6;
+                background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
                 border: none;
                 padding: .5rem 1rem;
                 border-radius: 2rem;
                 color: white;
                 font-size: small;
                 margin-top: 2rem;
+                transition: all .4s;
+
+                &:hover {
+                    background-image: linear-gradient(to top left, #0F0F0F, #464646);
+                    scale: 1.2;
+                }
             }
 
             h1 {
@@ -370,6 +378,18 @@ export default {
     .missions {
 
         .image {
+
+            .cover {
+                background-image: linear-gradient(to top right, #99DE6B, #14D6A5);
+                width: 483px;
+                height: 416px;
+                border-top-right-radius: .5rem;
+                position: absolute;
+                left: 0;
+                opacity: .9;
+                top: 102.7rem;
+            }
+
             .first-image {
                 width: 70%;
                 border-top-right-radius: 1rem;
@@ -379,8 +399,8 @@ export default {
 
             .second-image {
                 position: absolute;
-                top: 100rem;
-                left: 10%;
+                top: 107rem;
+                left: 9%;
                 width: 35%;
                 border-radius: .5rem;
             }
@@ -388,13 +408,19 @@ export default {
 
         button {
             text-transform: uppercase;
-            background: #00D9A6;
+            background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
             border: none;
             padding: .5rem 1rem;
             border-radius: 2rem;
             color: white;
             font-size: small;
             margin-top: .5rem;
+            transition: all .4s;
+
+            &:hover {
+                background-image: linear-gradient(to top left, #0F0F0F, #464646);
+                scale: 1.2;
+            }
         }
 
         span {
@@ -430,20 +456,60 @@ export default {
             font-size: small;
         }
 
-
         .col {
-            padding: 0 0 !important;
+            padding: .2rem .2rem !important;
+        }
+
+        .col-image {
+            transition: all .4s ease 0s;
+
+            img {
+                border-radius: .3rem;
+            }
+
+            &:hover {
+                position: relative;
+                scale: 1.1;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(to bottom left, #14D6A5, #99DE6B);
+                    opacity: .9;
+                    border-radius: .3rem;
+                }
+            }
+
+
+            .cover {
+                background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
+                height: 300px;
+                position: absolute;
+                top: 10rem;
+                left: 0rem;
+
+            }
         }
 
         button {
             text-transform: uppercase;
-            background: #00D9A6;
+            background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
             border: none;
             padding: .5rem 1rem;
             border-radius: 2rem;
             color: white;
             font-size: small;
             margin-top: 5rem;
+            transition: all .4s;
+
+            &:hover {
+                background-image: linear-gradient(to top left, #0F0F0F, #464646);
+                scale: 1.2;
+            }
         }
     }
 
@@ -460,13 +526,13 @@ export default {
         }
 
         .stats-cover {
-            background-color: #00D9A6;
+            background-image: linear-gradient(to bottom left, #99DE6B, #14D6A5);
             width: 690px;
             height: 480px;
             border-radius: .5rem;
             position: absolute;
             left: 4.5rem;
-            opacity: 0.9;
+            opacity: .9;
 
             .cover {
 
@@ -574,11 +640,12 @@ export default {
             }
 
             .green-card {
-                background-color: #00D9A6;
+                background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
             }
 
             .black-card {
-                background-color: black;
+                background-image: linear-gradient(to bottom left, #0F0F0F, #464646);
+
             }
 
             .banner {
@@ -681,12 +748,18 @@ export default {
 
             button {
                 text-transform: uppercase;
-                background: black;
+                background-image: linear-gradient(to top left, #0F0F0F, #464646);
                 border: none;
                 padding: .5rem 1rem;
                 border-radius: 2rem;
                 color: white;
                 font-size: small;
+                transition: all .4s ease 0s;
+
+                &:hover {
+                    scale: 1.2;
+                    background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
+                }
             }
 
             .vertical {
@@ -703,7 +776,7 @@ export default {
         padding: 5rem 0;
 
         .left-card {
-            background: black;
+            background-image: linear-gradient(to top left, #0F0F0F, #464646);
             padding: 3rem;
             border-radius: 1rem;
 
@@ -734,7 +807,7 @@ export default {
         }
 
         .right-card {
-            background: #00D9A6;
+            background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
             padding: 3rem;
             border-radius: 1rem;
 
@@ -742,12 +815,17 @@ export default {
                 padding: .7rem;
                 border: none;
                 padding-bottom: .58rem;
-                background-color: black;
+                background-image: linear-gradient(to top left, #0F0F0F, #464646);
                 text-transform: uppercase;
                 border-radius: 2rem;
                 font-size: small;
                 color: white;
                 margin-top: 2.5rem;
+                transition: all .4s ease 0s;
+
+                &:hover {
+                    scale: 1.2;
+                }
             }
         }
 

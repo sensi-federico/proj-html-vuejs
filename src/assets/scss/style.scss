@@ -12,18 +12,16 @@ img {
     max-width: 100%;
 }
 
-.clearfix {
-    overflow: auto;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 body {
     .row {
         margin: 0;
     }
+}
+
+.grad-black {
+    background-image: linear-gradient(to top left, #0F0F0F, #464646);
+}
+
+.grad-green {
+    background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
 }

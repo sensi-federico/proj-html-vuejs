@@ -34,12 +34,18 @@
 
             button {
                 text-transform: uppercase;
-                background: #00D9A6;
+                background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
                 border: none;
                 padding: .5rem 1rem;
                 border-radius: 2rem;
                 color: white;
                 font-size: small;
+                transition: all .4s;
+
+                &:hover {
+                    background-image: linear-gradient(to top left, #0F0F0F, #464646);
+                    scale: 1.2;
+                }
             }
 
             i {

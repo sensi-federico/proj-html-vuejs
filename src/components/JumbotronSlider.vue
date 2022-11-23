@@ -104,7 +104,7 @@ export default {
             }
 
             button {
-                background-color: black;
+                background-image: linear-gradient(to top left, #0F0F0F, #464646);
                 color: white;
                 text-transform: uppercase;
                 font-size: x-small;
@@ -112,6 +112,12 @@ export default {
                 border-radius: 2rem;
                 padding: .8rem 2rem;
                 margin-bottom: 3rem;
+                transition: all .4s;
+
+                &:hover {
+                    background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
+                    scale: 1.2;
+                }
             }
 
         }
@@ -126,7 +132,7 @@ export default {
         }
 
         .controls {
-            background-color: black;
+            background-image: linear-gradient(to top left, #0F0F0F, #464646);
             color: white;
             border-radius: 2rem;
             position: absolute;
@@ -146,7 +152,7 @@ export default {
             }
 
             .active {
-                background: #00D9A6;
+                background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
             }
         }
 
