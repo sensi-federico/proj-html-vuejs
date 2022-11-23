@@ -25,3 +25,27 @@ body {
 .grad-green {
     background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
 }
+
+// fonts 
+
+h1 {
+    font-family: 'Secular One', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Zilla Slab', serif;
+}
+
+p {
+    color: #aaaaaa;
+}
+
+p,
+a,
+button {
+    font-family: 'Fira Sans', sans-serif;
+}

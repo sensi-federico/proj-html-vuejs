@@ -92,6 +92,8 @@ export default {
 
             h5 {
                 color: #00D9A6;
+                font-family: 'Rajdhani', sans-serif;
+                text-transform: uppercase;
             }
 
             h1 {

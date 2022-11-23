@@ -213,9 +213,9 @@ export default {
                                             <h4>{{ store.packs[i].title }}</h4>
                                             <p class="text-muted m-0 pb-2">{{ store.packs[i].subtitle }}</p>
                                         </div>
-                                        <h1 class="text-white price">{{ store.packs[i].price }}
+                                        <h2 class="text-white price">{{ store.packs[i].price }}
                                             <span class="small">{{ store.packs[i].work }}</span>
-                                        </h1>
+                                        </h2>
                                     </div>
                                     <!-- bottom card -->
                                     <div class="bottom pt-5 pb-3">
@@ -623,6 +623,11 @@ export default {
         .my-cards {
             border-radius: 1rem;
             box-shadow: 0 2px 4px 0 rgba(152, 150, 150, 0.2), 0 3px 10px 0 rgba(146, 144, 144, 0.19);
+            transition: all .4s;
+
+            &:hover {
+                scale: 1.1;
+            }
 
             .top {
                 border-top-left-radius: 1rem;
@@ -718,6 +723,10 @@ export default {
         }
 
         .cards {
+
+            &:hover {
+                cursor: pointer;
+            }
 
             .card-image {
                 img {

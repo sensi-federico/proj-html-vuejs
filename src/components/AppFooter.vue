@@ -27,7 +27,7 @@ export default {
                     <!-- logo -->
                     <div class="col logo">
                         <img src="../../public/images/cropped-Group-39-2x.png" alt="">
-                        <p class="text-muted">
+                        <p class="">
                             While the lovely valley teems with vapour around me, and the meridian sun strikes the upper
                             surface og the impenetrable foliage of my trees. While the lovelt valey teems with vapour
                             around me.
@@ -38,7 +38,7 @@ export default {
                     <div class="col links d-flex flex-column">
                         <h5 class="text-uppercase">quick links</h5>
                         <TextHr />
-                        <a class="text-muted text-center text-capitalize" :href="store.linksFooter[i].url"
+                        <a class="text-center text-capitalize" :href="store.linksFooter[i].url"
                             v-for="(link, i) in store.linksFooter">{{ store.linksFooter[i].text }}</a>
                     </div>
 
@@ -46,13 +46,13 @@ export default {
                     <div class="col contact">
                         <h5 class="text-uppercase">contact</h5>
                         <TextHr />
-                        <p class="text-muted pb-2">
+                        <p class=" pb-2">
                             Patricia C. Amedee 4401 Waldeck Street <br> Grapevine Nashville, TX 76051
                         </p>
-                        <p class="text-muted pb-3">
+                        <p class=" pb-3">
                             info@yourdomain.com
                         </p>
-                        <p class="text-muted">
+                        <p class="">
                             +39 (0) 101 0000 888
                         </p>
                     </div>
@@ -74,7 +74,7 @@ export default {
             <div class="container d-flex justify-content-between align-items-center py-4">
 
                 <!-- copyright -->
-                <p class="text-muted m-0">
+                <p class=" m-0">
                     <i class="fa fa-copyright" aria-hidden="true"></i>
                     2020 PHLOX BUSINESS THEME.
                 </p>
@@ -125,7 +125,12 @@ export default {
 
             a {
                 text-decoration: none;
-                margin-bottom: .2rem;
+                margin-bottom: -.5rem;
+                color: #aaaaaa;
+
+                &:hover {
+                    color: #99DE6B;
+                }
             }
 
         }
@@ -135,6 +140,12 @@ export default {
         .social {
             i {
                 margin-left: 1rem;
+                transition: all .4s;
+
+                &:hover {
+                    color: #99DE6B;
+                    scale: 2;
+                }
             }
         }
     }
