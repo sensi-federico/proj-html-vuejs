@@ -153,7 +153,14 @@ export const store = reactive({
             title: 'Develop Your Startup Idea'
         },
     ],
-
+    partnerLogo: [
+        '../public/images/client-1-2x.png',
+        '../public/images/client-3-2x.png',
+        '../public/images/client-4-2x.png',
+        '../public/images/client-5-2x.png',
+        '../public/images/client-7-2x.png',
+        '../public/images/client-9-2x.png',
+    ],
 
     activeImage: 0,
     activeSlide: 0,

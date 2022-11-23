@@ -288,7 +288,44 @@ export default {
 
         <!-- contact -->
         <section class="contact">
-
+            <div class="container">
+                <div class="row row-cols-2">
+                    <!-- left-card -->
+                    <div class="col">
+                        <div class="left-card d-flex flex-column align-items-center">
+                            <p class="text-muted mb-2">
+                                Are You Ready?
+                            </p>
+                            <h2 class="mb-3 text-white">Start a New Project</h2>
+                            <div class="submit">
+                                <input type="email" placeholder="Enter Your Email Address">
+                                <button>submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right-card -->
+                    <div class="col">
+                        <div class="right-card d-flex flex-column align-items-center">
+                            <p class="text-muted mb-2">
+                                What Are You Waiting for?
+                            </p>
+                            <h2 class="mb-3 text-white">Let's Talk About Work</h2>
+                            <div class="start">
+                                <button>start now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row row-cols-6">
+                        <div class="col" v-for="(logo, i) in store.partnerLogo">
+                            <div class="image">
+                                <img :src="store.partnerLogo[i]" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -662,6 +699,67 @@ export default {
         }
     }
 
-    .contact {}
+    .contact {
+        padding: 5rem 0;
+
+        .left-card {
+            background: black;
+            padding: 3rem;
+            border-radius: 1rem;
+
+            .submit {
+                margin-top: 2.5rem;
+
+                input {
+                    border: none;
+                    padding: .5rem 1rem;
+                    width: 300px;
+                    border-top-left-radius: 2rem;
+                    border-bottom-left-radius: 2rem;
+                    background-color: gray;
+                }
+
+                button {
+                    padding: .7rem;
+                    border: none;
+                    padding-bottom: .58rem;
+                    background-color: gray;
+                    text-transform: uppercase;
+                    border-top-right-radius: 2rem;
+                    border-bottom-right-radius: 2rem;
+                    font-size: small;
+                    color: white;
+                }
+            }
+        }
+
+        .right-card {
+            background: #00D9A6;
+            padding: 3rem;
+            border-radius: 1rem;
+
+            button {
+                padding: .7rem;
+                border: none;
+                padding-bottom: .58rem;
+                background-color: black;
+                text-transform: uppercase;
+                border-radius: 2rem;
+                font-size: small;
+                color: white;
+                margin-top: 2.5rem;
+            }
+        }
+
+        .image {
+            margin-top: 5rem;
+            padding-left: 4rem;
+
+            img {
+                height: 40px;
+                width: 50%;
+            }
+        }
+    }
 }
 </style>
