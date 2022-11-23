@@ -161,6 +161,11 @@ export const store = reactive({
         '../public/images/client-7-2x.png',
         '../public/images/client-9-2x.png',
     ],
+    goals: [
+        'lorem ipsum dolor sit amet.',
+        'lorem ipsum dolor sit amet.',
+        'lorem ipsum dolor sit amet.',
+    ],
 
     activeImage: 0,
     activeSlide: 0,

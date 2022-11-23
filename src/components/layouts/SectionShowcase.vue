@@ -54,27 +54,10 @@ export default {
                     recusandae incidunt laboriosam.
                 </p>
 
-
-
-
-
-                <!-- da rendere dinamico se avanza tempo -->
-
-
-                <div class="icons d-flex align-items-center pt-3">
+                <div class="icons d-flex align-items-center pt-1" v-for="(goal, i) in store.goals">
                     <i class="fa fa-check" aria-hidden="true"></i>
-                    <p class="ms-2">Lorem ipsum dolor sit amet.</p>
+                    <p class="ms-2">{{ store.goals[i] }}</p>
                 </div>
-                <div class="icons d-flex align-items-center pt-1">
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    <p class="ms-2">Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="icons d-flex align-items-center pt-1">
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    <p class="ms-2">Lorem ipsum dolor sit amet.</p>
-                </div>
-
-
 
             </div>
         </div>
