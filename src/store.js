@@ -136,6 +136,23 @@ export const store = reactive({
         'extreme typography',
         'exceptional design',
     ],
+    blogCards: [
+        {
+            image: '../public/images/serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg',
+            date: 'May 24, 2022 .by Alex',
+            title: 'Marketing Ideas'
+        },
+        {
+            image: '../public/images/Businessman-at-the-desk-in-his-office-resting--1024x768.jpg',
+            date: 'May 24, 2022 .by Alex',
+            title: 'Rest During Working Hours'
+        },
+        {
+            image: '../public/images/simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg',
+            date: 'May 24, 2022 .by Alex',
+            title: 'Develop Your Startup Idea'
+        },
+    ],
 
 
     activeImage: 0,

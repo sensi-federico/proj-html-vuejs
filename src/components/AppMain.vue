@@ -246,6 +246,51 @@ export default {
             </div>
         </section>
 
+        <!-- latest news -->
+        <section class="news">
+            <!-- text -->
+            <div class="text d-flex flex-column align-items-center">
+                <h1>Latest News & Our <span>Blog</span></h1>
+                <TextHr />
+            </div>
+            <!-- card -->
+            <div class="cards">
+                <div class="container">
+                    <div class="row row-cols-3">
+                        <div class="col" v-for="(card, i) in store.blogCards">
+                            <!-- image -->
+                            <div class="card-image">
+                                <img :src="store.blogCards[i].image" alt="">
+                            </div>
+                            <!-- banner -->
+                            <div class="banner">
+                                <p class="text-muted">
+                                    {{ store.blogCards[i].date }}
+                                </p>
+                                <!-- title -->
+                                <div class="title d-flex align-items-center">
+                                    <div class="circle-green"></div>
+                                    <h4 class="m-0 ps-3">{{ store.blogCards[i].title }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- button -->
+                    <div class="button d-flex justify-content-center">
+                        <button>view all post</button>
+                    </div>
+                    <div class="vertical">
+                        17 years of experience helping people for best solutions
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact">
+
+        </section>
+
     </main>
     <!-- #site_main -->
 
@@ -559,5 +604,64 @@ export default {
             }
         }
     }
+
+    .news {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+
+        span {
+            color: #00D9A6;
+        }
+
+        .cards {
+
+            .card-image {
+                img {
+                    border-radius: .5rem;
+                    box-shadow: 0 4px 8px 0 rgba(104, 104, 104, 0.2), 0 6px 20px 0 rgba(110, 109, 109, 0.19);
+                }
+            }
+
+            .banner {
+                background-color: white;
+                box-shadow: 0 2px 4px 0 rgba(152, 150, 150, 0.2), 0 3px 10px 0 rgba(146, 144, 144, 0.19);
+                width: 90%;
+                padding: 1.5rem;
+                position: relative;
+                top: -4rem;
+                left: 1.3rem;
+                border-radius: .5rem;
+            }
+
+            .title {
+                .circle-green {
+                    height: 10px;
+                    width: 10px;
+                    background-color: #00D9A6;
+                    border-radius: 50%;
+                }
+            }
+
+            button {
+                text-transform: uppercase;
+                background: black;
+                border: none;
+                padding: .5rem 1rem;
+                border-radius: 2rem;
+                color: white;
+                font-size: small;
+            }
+
+            .vertical {
+                position: relative;
+                transform: rotate(-90deg);
+                font-size: small;
+                bottom: 47.5rem;
+                left: -42rem;
+            }
+        }
+    }
+
+    .contact {}
 }
 </style>
