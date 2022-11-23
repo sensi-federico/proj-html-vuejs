@@ -1,0 +1,43 @@
+.comment {
+    background-image: url('../../public/images/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg');
+    background-size: cover;
+    background-position: 0 -10rem;
+    color: white;
+
+    .scale {
+        height: 610px;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        opacity: .8;
+    }
+
+    .content {
+        padding: 6rem 0;
+        position: relative;
+
+        i {
+            font-size: 50px;
+            color: #00D9A6;
+            padding-bottom: 2rem;
+        }
+
+        p.long {
+            padding-bottom: 3rem;
+            font-style: italic;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+        }
+
+        h4 {
+            color: #00D9A6;
+            text-transform: uppercase;
+        }
+    }
+}

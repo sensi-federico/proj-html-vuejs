@@ -1,6 +1,16 @@
 @use '../../../node_modules/bootstrap/scss/bootstrap.scss';
 @use './partial/variables';
 @use './partial/header';
+@use './partial/services';
+@use './partial/missions';
+@use './partial/projects';
+@use './partial/showcase';
+@use './partial/packs';
+@use './partial/comment';
+@use './partial/news';
+@use './partial/contact';
+@use './partial/footer';
+@use './partial/slider';
 
 * {
     margin: 0;
@@ -18,12 +28,8 @@ body {
     }
 }
 
-.grad-black {
-    background-image: linear-gradient(to top left, #0F0F0F, #464646);
-}
-
-.grad-green {
-    background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
+p {
+    color: #aaaaaa;
 }
 
 // fonts 
@@ -40,9 +46,6 @@ h6 {
     font-family: 'Zilla Slab', serif;
 }
 
-p {
-    color: #aaaaaa;
-}
 
 p,
 a,

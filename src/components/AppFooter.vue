@@ -1,6 +1,6 @@
 <script>
 import { store } from '../store.js';
-import TextHr from './TextHr.vue';
+import TextHr from './layouts/TextHr.vue';
 
 export default {
     name: 'AppFooter',
@@ -20,7 +20,7 @@ export default {
     <footer id="site_footer">
 
         <!-- navbar -->
-        <nav>
+        <nav class="footer">
             <div class="container">
                 <div class="row row-cols-4">
 
@@ -43,7 +43,7 @@ export default {
                     </div>
 
                     <!-- contact -->
-                    <div class="col contact">
+                    <div class="col contacts">
                         <h5 class="text-uppercase">contact</h5>
                         <TextHr />
                         <p class=" pb-2">
@@ -96,58 +96,5 @@ export default {
 </template>
 
 <style lang="scss">
-#site_footer {
 
-    nav {
-
-        padding: 5rem 0;
-
-        p,
-        a {
-            font-size: 12.5px;
-        }
-
-        .logo {
-
-            img {
-                width: 200px;
-            }
-
-            p {
-                padding-top: 1.5rem;
-                margin: 0;
-                font-size: 12.5px;
-                line-height: 1.2rem;
-            }
-        }
-
-        .links {
-
-            a {
-                text-decoration: none;
-                margin-bottom: -.5rem;
-                color: #aaaaaa;
-
-                &:hover {
-                    color: #99DE6B;
-                }
-            }
-
-        }
-    }
-
-    .banner {
-        .social {
-            i {
-                margin-left: 1rem;
-                transition: all .4s;
-
-                &:hover {
-                    color: #99DE6B;
-                    scale: 2;
-                }
-            }
-        }
-    }
-}
 </style>

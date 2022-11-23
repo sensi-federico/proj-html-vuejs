@@ -1,0 +1,36 @@
+.services {
+    background-color: #F9F9F9;
+    padding: 8rem 0;
+
+    .text {
+
+        padding-right: 10rem;
+        padding-top: 4rem;
+
+        button {
+            text-transform: uppercase;
+            background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
+            border: none;
+            padding: .5rem 1rem;
+            border-radius: 2rem;
+            color: white;
+            font-size: small;
+            margin-top: 2rem;
+            transition: all .4s;
+
+            &:hover {
+                background-image: linear-gradient(to top left, #0F0F0F, #464646);
+                scale: 1.2;
+            }
+        }
+
+        h1 {
+            font-size: 45px;
+            text-transform: capitalize;
+        }
+
+        span {
+            color: #00D9A6;
+        }
+    }
+}

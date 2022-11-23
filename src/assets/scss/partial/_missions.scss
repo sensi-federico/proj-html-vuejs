@@ -1,0 +1,52 @@
+.missions {
+
+    .image {
+
+        .cover {
+            background-image: linear-gradient(to top right, #99DE6B, #14D6A5);
+            width: 483px;
+            height: 416px;
+            border-top-right-radius: .5rem;
+            position: absolute;
+            left: 0;
+            opacity: .9;
+            top: 102.7rem;
+        }
+
+        .first-image {
+            width: 70%;
+            border-top-right-radius: 1rem;
+            position: relative;
+            left: -1rem;
+        }
+
+        .second-image {
+            position: absolute;
+            top: 108rem;
+            left: 9%;
+            width: 35%;
+            border-radius: .5rem;
+        }
+    }
+
+    button {
+        text-transform: uppercase;
+        background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
+        border: none;
+        padding: .5rem 1rem;
+        border-radius: 2rem;
+        color: white;
+        font-size: small;
+        margin-top: .5rem;
+        transition: all .4s;
+
+        &:hover {
+            background-image: linear-gradient(to top left, #0F0F0F, #464646);
+            scale: 1.2;
+        }
+    }
+
+    span {
+        color: #00D9A6;
+    }
+}

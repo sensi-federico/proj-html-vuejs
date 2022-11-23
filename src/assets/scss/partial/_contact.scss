@@ -1,0 +1,73 @@
+.contact {
+    padding: 5rem 0;
+
+    .left-card {
+        background-image: linear-gradient(to top left, #0F0F0F, #464646);
+        padding: 3rem;
+        border-radius: 1rem;
+
+        .submit {
+            margin-top: 2.5rem;
+
+            input {
+                border: none;
+                padding: .5rem 1rem;
+                width: 300px;
+                border-top-left-radius: 2rem;
+                border-bottom-left-radius: 2rem;
+                background-color: gray;
+                outline: none;
+
+                &::placeholder {
+                    color: white;
+                    font-size: small;
+                }
+            }
+
+            button {
+                padding: .75rem;
+                border: none;
+                padding-bottom: .55rem;
+                background-color: gray;
+                text-transform: uppercase;
+                border-top-right-radius: 2rem;
+                border-bottom-right-radius: 2rem;
+                font-size: small;
+                color: white;
+            }
+        }
+    }
+
+    .right-card {
+        background-image: linear-gradient(to bottom left, #14D6A5, #99DE6B);
+        padding: 3rem;
+        border-radius: 1rem;
+
+        button {
+            padding: .7rem;
+            border: none;
+            padding-bottom: .58rem;
+            background-image: linear-gradient(to top left, #0F0F0F, #464646);
+            text-transform: uppercase;
+            border-radius: 2rem;
+            font-size: small;
+            color: white;
+            margin-top: 2.5rem;
+            transition: all .4s ease 0s;
+
+            &:hover {
+                scale: 1.2;
+            }
+        }
+    }
+
+    .image {
+        margin-top: 5rem;
+        padding-left: 4rem;
+
+        img {
+            height: 40px;
+            width: 50%;
+        }
+    }
+}
